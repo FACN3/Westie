@@ -1,9 +1,14 @@
 {{>htmlHead}}
 {{>htmlNavbar}}
 
-  <h1>hello</h1>
+  <h1>hello</h1><div class="test">
     {{#each dogPics}}
-      {{url}} {{title}}
-    {{/each}}
+    <div class="picWrapper">
+        <h1>{{title}}</h1>
+        <img src="{{url}}">
+    </div>
 
+
+    {{/each}}
+</div>  
 {{>htmlFooter}}
