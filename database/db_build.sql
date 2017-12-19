@@ -21,6 +21,8 @@ CREATE TABLE comments (
   userName VARCHAR(40) NOT NULL
 );
 
-INSERT INTO pictures (url, title) VALUES ('hello', 'test the title');
+INSERT INTO pictures (url, title)
+VALUES ('hello', 'test the title');
+
 
 COMMIT;
