@@ -1,14 +1,12 @@
-{{>htmlHead}}
-{{>htmlNavbar}}
+{{>htmlHead}} {{>htmlNavbar}}
 
-  <h1>hello</h1><div class="test">
+<h1>main</h1>
+<main class="main-wrapper">
     {{#each dogPics}}
-    <div class="picWrapper">
-        <h1>{{title}}</h1>
-        <img src="{{url}}">
-    </div>
-
-
+    <figure>
+        <h3>{{title}}</h3>
+            <a href="/singlePic?id={{id}}"><img class="pic-size" src="{{url}}"></a>        
+    </figure>
     {{/each}}
-</div>  
+</main>
 {{>htmlFooter}}

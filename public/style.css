@@ -1,9 +1,16 @@
-.nav-active{
-  background-color: red;
+.nav-active {
+    background-color: red;
 }
 
-.test{
-    display: flex;
-        justify-content: center;
-        flex-flow: row wrap;
+.main-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.pic-size {
+    height: 20vh;
+    width: 15vw;
+}
+.hidden{
+    display: none;
 }
