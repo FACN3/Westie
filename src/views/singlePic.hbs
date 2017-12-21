@@ -1,0 +1,15 @@
+{{>htmlHead}}
+{{>htmlNavbar}}
+
+
+<h1>This is Single Picture</h1>
+<img src="{{pic.url}}" alt="{{pic.title}}">
+
+<figure>
+<form action="/addLike" method="post">
+<input type="image" name="picId" value="{{pic.id}}" alt="likeIcon" src="/assets/likeIcon.png">
+</form>
+<span>{{pic.count}}</span>
+</figure>
+
+ {{>htmlFooter}}
